@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вікторина</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		
+		<h3 class="chosen">Картку обирає: <span id="chosen"></span></h3>
+	</header>
+    <main class="main container">
+			<div class="student-btns">
+				
+	    	<div class="student-list" id="studentList">
+		        <!-- Список студентів -->
+		    </div>
+				<button id="shuffleStudents">Перемішати</button>
+			</div>
+	    
+	    <section>
+	    	<div class="blurred-background" id="blurBackground"></div>
+		    <div class="cards" id="cardContainer">
+		        <!-- Картки будуть згенеровані тут -->
+		    </div>
+	    </section>
+    </main>
+		<div class="ranking container">
+			<h2>Загальний рейтинг</h2>
+			<table class="ranking-table" id="rankingTable">
+					<thead>
+							<tr>
+									<th>Студент</th>
+									<th>Бали</th>
+							</tr>
+					</thead>
+					<tbody>
+							<!-- Рейтинг студентів буде оновлюватися тут -->
+					</tbody>
+			</table>
+		</div>
+
+    <div class="modal" id="resultModal">
+        <div id="resultMessage"></div>
+        <button onclick="closeModal()">Закрити</button>
+    </div>
+
+    <!-- <script src="js/students.js"></script>
+    <script src="js/questions.js"></script> -->
+    <script src="script.js"></script>
+</body>
+</html>
